@@ -1,0 +1,489 @@
+[
+ {
+  "id": "ooc",
+  "points": [
+   0,
+   0.5,
+   -0.5,
+   3.2,
+   0,
+   -3.1,
+   0.2
+  ],
+  "cl": 0,
+  "ucl": 3,
+  "lcl": -3,
+  "spc": [
+   {
+    "index": 3,
+    "rule": "ooc",
+    "description": "Punto 4 fuera de los límites de control estadístico",
+    "severity": "critical"
+   },
+   {
+    "index": 5,
+    "rule": "ooc",
+    "description": "Punto 6 fuera de los límites de control estadístico",
+    "severity": "critical"
+   }
+  ],
+  "spcNoTrend": [
+   {
+    "index": 3,
+    "rule": "ooc",
+    "description": "Punto 4 fuera de los límites de control estadístico",
+    "severity": "critical"
+   },
+   {
+    "index": 5,
+    "rule": "ooc",
+    "description": "Punto 6 fuera de los límites de control estadístico",
+    "severity": "critical"
+   }
+  ],
+  "nelson": [
+   {
+    "index": 3,
+    "rule": 1,
+    "description": "Punto fuera de ±3σ (límites de control)"
+   },
+   {
+    "index": 5,
+    "rule": 1,
+    "description": "Punto fuera de ±3σ (límites de control)"
+   }
+  ]
+ },
+ {
+  "id": "trend6-up",
+  "points": [
+   0,
+   -1,
+   0.1,
+   0.2,
+   0.3,
+   0.4,
+   0.5,
+   0.6,
+   0
+  ],
+  "cl": 0,
+  "ucl": 3,
+  "lcl": -3,
+  "spc": [
+   {
+    "index": 6,
+    "rule": "trend",
+    "description": "Tendencia de 6 puntos consecutivos ascendente (obs. 2–7)",
+    "severity": "warning"
+   },
+   {
+    "index": 7,
+    "rule": "trend",
+    "description": "Tendencia de 6 puntos consecutivos ascendente (obs. 3–8)",
+    "severity": "warning"
+   }
+  ],
+  "spcNoTrend": [],
+  "nelson": [
+   {
+    "index": 6,
+    "rule": 3,
+    "description": "6 puntos consecutivos en tendencia monótona"
+   },
+   {
+    "index": 7,
+    "rule": 3,
+    "description": "6 puntos consecutivos en tendencia monótona"
+   }
+  ]
+ },
+ {
+  "id": "trend5-up",
+  "points": [
+   0,
+   -1,
+   0.1,
+   0.2,
+   0.3,
+   0.4,
+   0,
+   0.6,
+   0
+  ],
+  "cl": 0,
+  "ucl": 3,
+  "lcl": -3,
+  "spc": [],
+  "spcNoTrend": [],
+  "nelson": []
+ },
+ {
+  "id": "trend-tie",
+  "points": [
+   0.1,
+   0.2,
+   0.3,
+   0.3,
+   0.4,
+   0.5,
+   0.6
+  ],
+  "cl": 0,
+  "ucl": 3,
+  "lcl": -3,
+  "spc": [],
+  "spcNoTrend": [],
+  "nelson": []
+ },
+ {
+  "id": "trend6-down",
+  "points": [
+   2,
+   1.5,
+   1,
+   0.5,
+   0,
+   -0.5,
+   -1
+  ],
+  "cl": 0,
+  "ucl": 3,
+  "lcl": -3,
+  "spc": [
+   {
+    "index": 5,
+    "rule": "trend",
+    "description": "Tendencia de 6 puntos consecutivos descendente (obs. 1–6)",
+    "severity": "warning"
+   },
+   {
+    "index": 6,
+    "rule": "trend",
+    "description": "Tendencia de 6 puntos consecutivos descendente (obs. 2–7)",
+    "severity": "warning"
+   }
+  ],
+  "spcNoTrend": [],
+  "nelson": [
+   {
+    "index": 5,
+    "rule": 3,
+    "description": "6 puntos consecutivos en tendencia monótona"
+   },
+   {
+    "index": 6,
+    "rule": 3,
+    "description": "6 puntos consecutivos en tendencia monótona"
+   }
+  ]
+ },
+ {
+  "id": "shift8",
+  "points": [
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   -1
+  ],
+  "cl": 0,
+  "ucl": 3,
+  "lcl": -3,
+  "spc": [
+   {
+    "index": 7,
+    "rule": "shift",
+    "description": "8 puntos consecutivos sobre la línea central (obs. 1–8)",
+    "severity": "warning"
+   }
+  ],
+  "spcNoTrend": [
+   {
+    "index": 7,
+    "rule": "shift",
+    "description": "8 puntos consecutivos sobre la línea central (obs. 1–8)",
+    "severity": "warning"
+   }
+  ],
+  "nelson": []
+ },
+ {
+  "id": "shift7",
+  "points": [
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   -1,
+   1
+  ],
+  "cl": 0,
+  "ucl": 3,
+  "lcl": -3,
+  "spc": [],
+  "spcNoTrend": [],
+  "nelson": []
+ },
+ {
+  "id": "shift-on-cl",
+  "points": [
+   1,
+   1,
+   1,
+   0,
+   1,
+   1,
+   1,
+   1,
+   1
+  ],
+  "cl": 0,
+  "ucl": 3,
+  "lcl": -3,
+  "spc": [],
+  "spcNoTrend": [],
+  "nelson": []
+ },
+ {
+  "id": "nelson9",
+  "points": [
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1
+  ],
+  "cl": 0,
+  "ucl": 3,
+  "lcl": -3,
+  "spc": [
+   {
+    "index": 7,
+    "rule": "shift",
+    "description": "8 puntos consecutivos sobre la línea central (obs. 1–8)",
+    "severity": "warning"
+   },
+   {
+    "index": 8,
+    "rule": "shift",
+    "description": "8 puntos consecutivos sobre la línea central (obs. 2–9)",
+    "severity": "warning"
+   },
+   {
+    "index": 9,
+    "rule": "shift",
+    "description": "8 puntos consecutivos sobre la línea central (obs. 3–10)",
+    "severity": "warning"
+   }
+  ],
+  "spcNoTrend": [
+   {
+    "index": 7,
+    "rule": "shift",
+    "description": "8 puntos consecutivos sobre la línea central (obs. 1–8)",
+    "severity": "warning"
+   },
+   {
+    "index": 8,
+    "rule": "shift",
+    "description": "8 puntos consecutivos sobre la línea central (obs. 2–9)",
+    "severity": "warning"
+   },
+   {
+    "index": 9,
+    "rule": "shift",
+    "description": "8 puntos consecutivos sobre la línea central (obs. 3–10)",
+    "severity": "warning"
+   }
+  ],
+  "nelson": [
+   {
+    "index": 8,
+    "rule": 2,
+    "description": "9 puntos consecutivos del mismo lado de la línea central"
+   },
+   {
+    "index": 9,
+    "rule": 2,
+    "description": "9 puntos consecutivos del mismo lado de la línea central"
+   }
+  ]
+ },
+ {
+  "id": "nelson14",
+  "points": [
+   0,
+   1,
+   0,
+   1,
+   0,
+   1,
+   0,
+   1,
+   0,
+   1,
+   0,
+   1,
+   0,
+   1,
+   0
+  ],
+  "cl": 0.5,
+  "ucl": 3,
+  "lcl": -3,
+  "spc": [],
+  "spcNoTrend": [],
+  "nelson": [
+   {
+    "index": 13,
+    "rule": 4,
+    "description": "14 puntos alternando hacia arriba y hacia abajo"
+   },
+   {
+    "index": 14,
+    "rule": 4,
+    "description": "14 puntos alternando hacia arriba y hacia abajo"
+   }
+  ]
+ },
+ {
+  "id": "nelson13",
+  "points": [
+   0,
+   1,
+   0,
+   1,
+   0,
+   1,
+   0,
+   1,
+   0,
+   1,
+   0,
+   1,
+   0
+  ],
+  "cl": 0.5,
+  "ucl": 3,
+  "lcl": -3,
+  "spc": [],
+  "spcNoTrend": [],
+  "nelson": []
+ },
+ {
+  "id": "mixed",
+  "points": [
+   1.0162,
+   -1.5372,
+   0.2283,
+   0.4392,
+   0.1431,
+   -1.8931,
+   -0.4352,
+   0.9882,
+   0.4711,
+   -1.0372,
+   2.5626,
+   0.0027,
+   0.1416,
+   0.7004,
+   -1.8228,
+   -0.8937,
+   -0.0484,
+   -0.2179,
+   -1.4753,
+   -1.19,
+   0.7518,
+   -0.7914,
+   0.1064,
+   0.4329,
+   0.4672,
+   -0.6248,
+   -0.4679,
+   -1.6622,
+   -0.9063,
+   0.0619,
+   -0.8204,
+   -0.8971,
+   -1.3557,
+   -1.8132,
+   -1.2052,
+   -0.9239,
+   -1.0803,
+   -0.8927,
+   0.2929,
+   -0.2222,
+   -0.7922,
+   -0.2819,
+   1.3053,
+   0.4362,
+   -1.444,
+   -0.5547,
+   -1.7904,
+   -0.781,
+   0.0373,
+   0.553,
+   1.0202,
+   -1.8224,
+   -0.2222,
+   0.7866,
+   0.5745,
+   0.2933,
+   0.984,
+   1.1389,
+   0.4964,
+   -1.34
+  ],
+  "cl": 0,
+  "ucl": 2.2,
+  "lcl": -2.2,
+  "spc": [
+   {
+    "index": 10,
+    "rule": "ooc",
+    "description": "Punto 11 fuera de los límites de control estadístico",
+    "severity": "critical"
+   },
+   {
+    "index": 37,
+    "rule": "shift",
+    "description": "8 puntos consecutivos bajo la línea central (obs. 31–38)",
+    "severity": "warning"
+   }
+  ],
+  "spcNoTrend": [
+   {
+    "index": 10,
+    "rule": "ooc",
+    "description": "Punto 11 fuera de los límites de control estadístico",
+    "severity": "critical"
+   },
+   {
+    "index": 37,
+    "rule": "shift",
+    "description": "8 puntos consecutivos bajo la línea central (obs. 31–38)",
+    "severity": "warning"
+   }
+  ],
+  "nelson": [
+   {
+    "index": 10,
+    "rule": 1,
+    "description": "Punto fuera de ±3σ (límites de control)"
+   }
+  ]
+ }
+]

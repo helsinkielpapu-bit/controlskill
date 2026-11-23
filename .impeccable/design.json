@@ -1,0 +1,491 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-19T00:00:00Z",
+  "title": "Design System: ControlSkill",
+  "extensions": {
+    "colorMeta": {
+      "drawing-ink": {
+        "role": "primary",
+        "displayName": "Drawing Ink",
+        "canonical": "#14365c",
+        "tonalRamp": [
+          "#0b1f36",
+          "#14365c",
+          "#1d4a7a",
+          "#3b6a9a",
+          "#6f93b8",
+          "#c6d4e4",
+          "#e6edf5",
+          "#f6f9fc"
+        ]
+      },
+      "drawing-ink-hover": {
+        "role": "primary",
+        "displayName": "Drawing Ink Hover",
+        "canonical": "#1d4a7a",
+        "tonalRamp": [
+          "#0b1f36",
+          "#14365c",
+          "#1d4a7a",
+          "#3b6a9a",
+          "#6f93b8",
+          "#c6d4e4",
+          "#e6edf5",
+          "#f6f9fc"
+        ]
+      },
+      "ink-wash": {
+        "role": "primary",
+        "displayName": "Ink Wash",
+        "canonical": "#e6edf5",
+        "tonalRamp": [
+          "#0b1f36",
+          "#14365c",
+          "#1d4a7a",
+          "#3b6a9a",
+          "#6f93b8",
+          "#c6d4e4",
+          "#e6edf5",
+          "#f6f9fc"
+        ]
+      },
+      "ink-mist": {
+        "role": "primary",
+        "displayName": "Ink Mist",
+        "canonical": "#c6d4e4",
+        "tonalRamp": [
+          "#0b1f36",
+          "#14365c",
+          "#1d4a7a",
+          "#3b6a9a",
+          "#6f93b8",
+          "#c6d4e4",
+          "#e6edf5",
+          "#f6f9fc"
+        ]
+      },
+      "plan-ground": {
+        "role": "neutral",
+        "displayName": "Plan Ground",
+        "canonical": "#eef2f6",
+        "tonalRamp": [
+          "#1c232b",
+          "#38424e",
+          "#566474",
+          "#7b8a9b",
+          "#9fb1c4",
+          "#d3dce6",
+          "#eef2f6",
+          "#ffffff"
+        ]
+      },
+      "sheet-white": {
+        "role": "neutral",
+        "displayName": "Sheet White",
+        "canonical": "#ffffff",
+        "tonalRamp": [
+          "#1c232b",
+          "#38424e",
+          "#566474",
+          "#7b8a9b",
+          "#9fb1c4",
+          "#d3dce6",
+          "#eef2f6",
+          "#ffffff"
+        ]
+      },
+      "graphite-text": {
+        "role": "neutral",
+        "displayName": "Graphite Text",
+        "canonical": "#1c232b",
+        "tonalRamp": [
+          "#1c232b",
+          "#38424e",
+          "#566474",
+          "#7b8a9b",
+          "#9fb1c4",
+          "#d3dce6",
+          "#eef2f6",
+          "#ffffff"
+        ]
+      },
+      "slate-secondary": {
+        "role": "neutral",
+        "displayName": "Slate Secondary",
+        "canonical": "#566474",
+        "tonalRamp": [
+          "#1c232b",
+          "#38424e",
+          "#566474",
+          "#7b8a9b",
+          "#9fb1c4",
+          "#d3dce6",
+          "#eef2f6",
+          "#ffffff"
+        ]
+      },
+      "hairline": {
+        "role": "neutral",
+        "displayName": "Hairline",
+        "canonical": "#d3dce6",
+        "tonalRamp": [
+          "#1c232b",
+          "#38424e",
+          "#566474",
+          "#7b8a9b",
+          "#9fb1c4",
+          "#d3dce6",
+          "#eef2f6",
+          "#ffffff"
+        ]
+      },
+      "hairline-strong": {
+        "role": "neutral",
+        "displayName": "Hairline Strong",
+        "canonical": "#9fb1c4",
+        "tonalRamp": [
+          "#1c232b",
+          "#38424e",
+          "#566474",
+          "#7b8a9b",
+          "#9fb1c4",
+          "#d3dce6",
+          "#eef2f6",
+          "#ffffff"
+        ]
+      },
+      "row-hover": {
+        "role": "neutral",
+        "displayName": "Row Hover",
+        "canonical": "#f6f9fc",
+        "tonalRamp": [
+          "#1c232b",
+          "#38424e",
+          "#566474",
+          "#7b8a9b",
+          "#9fb1c4",
+          "#d3dce6",
+          "#eef2f6",
+          "#f6f9fc"
+        ]
+      },
+      "reject-red": {
+        "role": "state",
+        "displayName": "Reject Red",
+        "canonical": "#b42318",
+        "tonalRamp": [
+          "#4a0e09",
+          "#7a1810",
+          "#b42318",
+          "#d4483c",
+          "#e9877e",
+          "#f5bdb8",
+          "#fdeceb",
+          "#fff7f6"
+        ]
+      },
+      "reject-red-tint": {
+        "role": "state",
+        "displayName": "Reject Red Tint",
+        "canonical": "#fdeceb",
+        "tonalRamp": [
+          "#4a0e09",
+          "#7a1810",
+          "#b42318",
+          "#d4483c",
+          "#e9877e",
+          "#f5bdb8",
+          "#fdeceb",
+          "#fff7f6"
+        ]
+      },
+      "caution-amber": {
+        "role": "state",
+        "displayName": "Caution Amber",
+        "canonical": "#a15c07",
+        "tonalRamp": [
+          "#3d2302",
+          "#6b3d04",
+          "#a15c07",
+          "#c97d1c",
+          "#e0a557",
+          "#f0cf9e",
+          "#fdf3e2",
+          "#fffaf1"
+        ]
+      },
+      "caution-amber-tint": {
+        "role": "state",
+        "displayName": "Caution Amber Tint",
+        "canonical": "#fdf3e2",
+        "tonalRamp": [
+          "#3d2302",
+          "#6b3d04",
+          "#a15c07",
+          "#c97d1c",
+          "#e0a557",
+          "#f0cf9e",
+          "#fdf3e2",
+          "#fffaf1"
+        ]
+      },
+      "accept-green": {
+        "role": "state",
+        "displayName": "Accept Green",
+        "canonical": "#1d6b45",
+        "tonalRamp": [
+          "#0a2c1c",
+          "#124a2f",
+          "#1d6b45",
+          "#348d63",
+          "#6db592",
+          "#acd8c1",
+          "#e7f4ec",
+          "#f5fbf7"
+        ]
+      },
+      "accept-green-tint": {
+        "role": "state",
+        "displayName": "Accept Green Tint",
+        "canonical": "#e7f4ec",
+        "tonalRamp": [
+          "#0a2c1c",
+          "#124a2f",
+          "#1d6b45",
+          "#348d63",
+          "#6db592",
+          "#acd8c1",
+          "#e7f4ec",
+          "#f5fbf7"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Access-screen statement on the ink panel only; 30px on phones."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Page titles; 25px under 860px."
+      },
+      "figure": {
+        "displayName": "Figure",
+        "purpose": "Key numbers in the figures strip; 40px large variant."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Sheet and modal headings; 20px in the report, 22px in drawer head and manual."
+      },
+      "subtitle": {
+        "displayName": "Subtitle",
+        "purpose": "Sub-blocks inside a sheet."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Running text with tabular numerals; ledes and manual text cap at 72ch."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Uppercase context-strip terms, figure captions, stacked-table captions, cota ticks; 12px for table heads."
+      },
+      "field-label": {
+        "displayName": "Field Label",
+        "purpose": "Uppercase form field labels."
+      }
+    },
+    "shadows": [
+      {
+        "name": "focus-inset-stroke",
+        "value": "inset 0 0 0 1px #14365c",
+        "purpose": "Thickens a focused input's ink border; not elevation. The capture grid uses a 2px inset."
+      }
+    ],
+    "overlays": [
+      {
+        "name": "modal-scrim",
+        "value": "rgba(20,54,92,.35)",
+        "purpose": "Translucent ink behind modal dialogs."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease-draft",
+        "value": "cubic-bezier(.16,1,.3,1)",
+        "purpose": "Drawer slide-in and cota process-bar draw."
+      },
+      {
+        "name": "drawer-slide",
+        "value": "transform .28s",
+        "purpose": "Right drawer enter and exit."
+      },
+      {
+        "name": "cota-draw",
+        "value": "scaleX 0 to 1, .5s",
+        "purpose": "Process x̄ ± 3σ bar draws outward from x̄ on mount."
+      },
+      {
+        "name": "button-fill",
+        "value": "background .15s",
+        "purpose": "Button hover fill."
+      },
+      {
+        "name": "spinner",
+        "value": "rotate 360deg, .7s linear infinite",
+        "purpose": "Loading indicator."
+      },
+      {
+        "name": "reduced-motion",
+        "value": "animation:none; transition:none",
+        "purpose": "All motion removed under prefers-reduced-motion."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "md",
+        "value": "1100px",
+        "purpose": "Three columns to two; side column stacks; tighter nav."
+      },
+      {
+        "name": "sm",
+        "value": "860px",
+        "purpose": "Menu-button nav, single column, stacked tables, cota above frames."
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "The main action of a page or dialog: solid drafting ink, square.",
+      "html": "<button class=\"ds-btn ds-btn-primary\"><svg class=\"ds-i\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M12 5v14M5 12h14\"/></svg>Nuevo proceso</button>",
+      "css": ".ds-btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;height:40px;padding:0 16px;border:1.5px solid #14365c;border-radius:0;font:600 15px 'Archivo',system-ui,sans-serif;cursor:pointer;transition:background .15s;white-space:nowrap}.ds-i{width:16px;height:16px;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}.ds-btn-primary{background:#14365c;color:#fff}.ds-btn-primary:hover{background:#1d4a7a}.ds-btn:focus-visible{outline:2px solid #14365c;outline-offset:2px}.ds-btn:disabled{opacity:.45;cursor:not-allowed}"
+    },
+    {
+      "name": "Secondary Button",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "Default button: ink outline on white, ink-wash on hover.",
+      "html": "<button class=\"ds-btn2\"><svg class=\"ds-i\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M12 20h9M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z\"/></svg>Ingresar datos</button>",
+      "css": ".ds-btn2{display:inline-flex;align-items:center;gap:8px;height:40px;padding:0 16px;border:1.5px solid #14365c;border-radius:0;background:#fff;color:#14365c;font:600 15px 'Archivo',system-ui,sans-serif;cursor:pointer;transition:background .15s}.ds-btn2:hover{background:#e6edf5}.ds-btn2:focus-visible{outline:2px solid #14365c;outline-offset:2px}.ds-i{width:16px;height:16px;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}"
+    },
+    {
+      "name": "Danger Button",
+      "kind": "button",
+      "refersTo": "button-danger",
+      "description": "Destructive action: red outline on white, red tint on hover.",
+      "html": "<button class=\"ds-btn-danger\">Eliminar</button>",
+      "css": ".ds-btn-danger{display:inline-flex;align-items:center;height:40px;padding:0 16px;border:1.5px solid #b42318;border-radius:0;background:#fff;color:#b42318;font:600 15px 'Archivo',system-ui,sans-serif;cursor:pointer;transition:background .15s}.ds-btn-danger:hover{background:#fdeceb}.ds-btn-danger:focus-visible{outline:2px solid #14365c;outline-offset:2px}"
+    },
+    {
+      "name": "Field",
+      "kind": "input",
+      "refersTo": "input",
+      "description": "Labelled input: uppercase narrow label, square strong-hairline box, ink focus stroke.",
+      "html": "<label class=\"ds-field\"><span>LSE <span class=\"ds-sym\">σ</span></span><input class=\"ds-input\" value=\"505\"><small>Límite superior de especificación</small></label>",
+      "css": ".ds-field{display:grid;gap:5px;font-family:'Archivo',system-ui,sans-serif;max-width:240px}.ds-field>span{font:600 12px 'Archivo Narrow','Archivo',sans-serif;letter-spacing:.06em;text-transform:uppercase;color:#566474}.ds-sym{text-transform:none;font-family:'Archivo',sans-serif;letter-spacing:0}.ds-field small{font-size:12px;color:#566474}.ds-input{height:40px;border:1.5px solid #9fb1c4;background:#fff;padding:0 11px;border-radius:0;font:15px 'Archivo',sans-serif;color:#1c232b;font-variant-numeric:tabular-nums}.ds-input:hover{border-color:#c6d4e4}.ds-input:focus{outline:none;border-color:#14365c;box-shadow:inset 0 0 0 1px #14365c}.ds-input[aria-invalid=true]{border-color:#b42318;background:#fdeceb}"
+    },
+    {
+      "name": "Top Bar",
+      "kind": "nav",
+      "refersTo": "top-bar",
+      "description": "Sticky ink shell with uppercase narrow wordmark and underlined active tab.",
+      "html": "<nav class=\"ds-bar\"><a class=\"ds-brand\" href=\"#\"><i></i>ControlSkill</a><div class=\"ds-nav\"><a class=\"active\" href=\"#\">Panel</a><a href=\"#\">Fase I</a><a href=\"#\">Capacidad</a><a href=\"#\">Fase II</a></div></nav>",
+      "css": ".ds-bar{background:#14365c;color:#fff;height:56px;display:flex;align-items:center;gap:28px;padding:0 24px;font-family:'Archivo',sans-serif}.ds-brand{font:700 18px 'Archivo Narrow','Archivo',sans-serif;letter-spacing:.06em;text-transform:uppercase;color:#fff;text-decoration:none;display:flex;align-items:center}.ds-brand i{display:inline-block;width:10px;height:10px;border:2px solid #fff;margin-right:9px}.ds-nav{display:flex;height:100%;gap:2px}.ds-nav a{display:flex;align-items:center;padding:0 13px;color:#c6d4e4;text-decoration:none;font-weight:500;border-top:3px solid transparent;border-bottom:3px solid transparent}.ds-nav a:hover{color:#fff}.ds-nav a.active{color:#fff;font-weight:600;border-bottom-color:#fff}.ds-nav a:focus-visible{outline:2px solid #fff;outline-offset:-2px}"
+    },
+    {
+      "name": "Status Mark",
+      "kind": "chip",
+      "refersTo": "tag",
+      "description": "State is always colour plus icon plus word.",
+      "html": "<div class=\"ds-states\"><span class=\"ds-state ok\"><svg class=\"ds-i\" viewBox=\"0 0 24 24\"><path d=\"M20 6 9 17l-5-5\"/></svg>Capaz</span><span class=\"ds-state warn\"><svg class=\"ds-i\" viewBox=\"0 0 24 24\"><circle cx=\"12\" cy=\"12\" r=\"9\"/><path d=\"M12 3a9 9 0 0 1 0 18Z\" fill=\"currentColor\"/></svg>Marginal</span><span class=\"ds-state bad\"><svg class=\"ds-i\" viewBox=\"0 0 24 24\"><path d=\"M18 6 6 18M6 6l12 12\"/></svg>No capaz</span><span class=\"ds-tag\">X̄-R</span></div>",
+      "css": ".ds-states{display:flex;gap:18px;align-items:center;font-family:'Archivo',sans-serif}.ds-state{display:inline-flex;align-items:center;gap:6px;font-weight:600;font-size:14px}.ds-state.ok{color:#1d6b45}.ds-state.warn{color:#a15c07}.ds-state.bad{color:#b42318}.ds-i{width:16px;height:16px;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}.ds-tag{display:inline-block;font:600 12px 'Archivo',sans-serif;letter-spacing:.06em;padding:2px 7px;border:1px solid #9fb1c4;color:#14365c;background:#fff}"
+    },
+    {
+      "name": "Sheet",
+      "kind": "card",
+      "refersTo": "sheet",
+      "description": "The container: white, square, strong-hairline frame, hairline-ruled head, 2px ink rule under table heads.",
+      "html": "<section class=\"ds-sheet\"><header><h2>Procesos</h2></header><table><thead><tr><th>Proceso</th><th class=\"num\">Mediciones</th></tr></thead><tbody><tr><td>Llenado de envases</td><td class=\"num\">60</td></tr><tr><td>Torque de tapa</td><td class=\"num\">125</td></tr></tbody></table><footer>2 procesos</footer></section>",
+      "css": ".ds-sheet{background:#fff;border:1px solid #9fb1c4;font:15px/1.45 'Archivo',sans-serif;color:#1c232b;font-variant-numeric:tabular-nums}.ds-sheet header{padding:12px 16px;border-bottom:1px solid #d3dce6}.ds-sheet h2{font:700 18px/1.2 'Archivo Narrow','Archivo',sans-serif}.ds-sheet table{width:100%;border-collapse:collapse}.ds-sheet th{font:600 12px 'Archivo Narrow','Archivo',sans-serif;letter-spacing:.08em;text-transform:uppercase;color:#566474;text-align:left;padding:10px 14px;border-bottom:2px solid #14365c}.ds-sheet td{padding:10px 14px;border-bottom:1px solid #d3dce6}.ds-sheet .num{text-align:right}.ds-sheet tbody tr:hover{background:#f6f9fc}.ds-sheet footer{padding:10px 16px;font-size:12px;color:#566474}"
+    },
+    {
+      "name": "Control Frame",
+      "kind": "custom",
+      "refersTo": "control-frame",
+      "description": "GD&T-style frame for Cpk: symbol cell and state-coloured value cell.",
+      "html": "<div class=\"ds-frames\"><span class=\"ds-fcf\"><b>Cpk</b><i class=\"ok\">1.914</i></span><span class=\"ds-fcf lg\"><b>Cpk</b><i class=\"bad\">0.841</i></span><span class=\"ds-fcf muted\"><b>Cpk</b><i>—</i></span></div>",
+      "css": ".ds-frames{display:flex;gap:16px;align-items:center}.ds-fcf{display:inline-flex;border:1.5px solid #14365c;font-family:'Archivo Narrow','Archivo',sans-serif;font-weight:700;line-height:1;background:#fff;font-variant-numeric:tabular-nums}.ds-fcf b{padding:6px 7px;border-right:1.5px solid #14365c;font-size:13px;color:#14365c;font-weight:600}.ds-fcf i{padding:5px 9px;font-style:normal;font-size:19px;min-width:62px;text-align:right;color:#566474}.ds-fcf i.ok{color:#1d6b45}.ds-fcf i.bad{color:#b42318}.ds-fcf.lg b{font-size:15px;padding:10px}.ds-fcf.lg i{font-size:30px;padding:7px 12px}.ds-fcf.muted,.ds-fcf.muted b{border-color:#9fb1c4;color:#566474}"
+    },
+    {
+      "name": "Capacity Cota",
+      "kind": "custom",
+      "refersTo": "cota",
+      "description": "Signature: tolerance LSI–LSE as a dimension with arrows, dashed nominal, process x̄ ± 3σ bar to scale, out-of-tolerance part in red.",
+      "html": "<svg class=\"ds-cota\" viewBox=\"0 0 380 56\" role=\"img\" aria-label=\"Tolerancia 495 a 505; proceso de 493.6 a 503.2\"><rect x=\"86\" y=\"8\" width=\"208\" height=\"30\" fill=\"#e6edf5\"/><line x1=\"86\" y1=\"4\" x2=\"86\" y2=\"42\" stroke=\"#14365c\" stroke-width=\"1.5\"/><line x1=\"294\" y1=\"4\" x2=\"294\" y2=\"42\" stroke=\"#14365c\" stroke-width=\"1.5\"/><line x1=\"190\" y1=\"8\" x2=\"190\" y2=\"38\" stroke=\"#14365c\" stroke-dasharray=\"3 3\"/><line x1=\"92\" y1=\"14\" x2=\"288\" y2=\"14\" stroke=\"#14365c\"/><path d=\"M86 14l7-3v6zM294 14l-7-3v6z\" fill=\"#14365c\"/><g class=\"ds-proc\"><rect x=\"57\" y=\"23\" width=\"29\" height=\"7\" fill=\"#b42318\"/><rect x=\"86\" y=\"23\" width=\"171\" height=\"7\" fill=\"#1c232b\"/></g><line x1=\"157\" y1=\"19\" x2=\"157\" y2=\"34\" stroke=\"#1c232b\" stroke-width=\"2.5\"/><text x=\"86\" y=\"54\" text-anchor=\"middle\">495</text><text x=\"190\" y=\"54\" text-anchor=\"middle\">500</text><text x=\"294\" y=\"54\" text-anchor=\"middle\">505</text></svg>",
+      "css": ".ds-cota{display:block;width:100%;max-width:380px;height:56px;overflow:visible}.ds-cota text{font:600 11px 'Archivo Narrow','Archivo',sans-serif;fill:#566474}.ds-proc{transform-box:fill-box;transform-origin:157px 50%;animation:ds-draw .5s cubic-bezier(.16,1,.3,1) both}@keyframes ds-draw{from{transform:scaleX(0)}}@media (prefers-reduced-motion:reduce){.ds-proc{animation:none}}"
+    },
+    {
+      "name": "Alert",
+      "kind": "custom",
+      "refersTo": "alert",
+      "description": "State-bordered notice on its tint with icon and darkened text.",
+      "html": "<div class=\"ds-alert\"><svg class=\"ds-i\" viewBox=\"0 0 24 24\"><path d=\"M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0Z\"/><path d=\"M12 9v4M12 17h.01\"/></svg><div>Subgrupo 7 fuera de los límites de control.</div></div>",
+      "css": ".ds-alert{display:flex;gap:10px;align-items:flex-start;padding:10px 14px;border:1.5px solid #b42318;background:#fdeceb;color:#7a1810;font:14px 'Archivo',sans-serif}.ds-i{width:16px;height:16px;margin-top:2px;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;flex:none}"
+    }
+  ],
+  "narrative": {
+    "northStar": "Hoja de plano",
+    "overview": "The interface is an engineering drawing sheet. White sheets sit on a cool blue-grey ground, ruled with 1px hairlines and inked in one drafting navy. Nothing floats: there are no drop shadows, no rounded containers, no gradients. Hierarchy comes from rule weight (1px hairline, 1.5px control stroke, 2px ink rule under headers and around title blocks), from the condensed Archivo Narrow used for every heading, label and figure, and from the deliberate restraint of the palette, so the three state colours are the loudest things on any screen.\n\nThe world is dense and operational. Tables carry the work; figures are set large in tabular numerals; method context (σ estimator, n, limits) sits in ruled context strips next to results. The one signature device is the capacity cota: the specification tolerance LSI to LSE drawn as a dimension line with arrowheads over a pale ink band, a dashed nominal axis, and the process x̄ ± 3σ bar drawn to the same scale, with any part beyond tolerance in red. Cpk beside it is set in a GD&T-style control frame. The same cota appears at three scales: a panel table row, the capability header, and the printed report.",
+    "keyCharacteristics": [
+      "One ink (drafting navy) for all interactive and structural emphasis; white sheets on a pale plan ground.",
+      "Square corners everywhere a container or control appears; depth by rules, never by shadow.",
+      "Archivo Narrow for headings, labels and figures; Archivo for running text; tabular numerals throughout.",
+      "State colour always paired with an icon and a word.",
+      "The cota and the control frame are the reusable signature, repeated at row, header and report scale."
+    ],
+    "rules": [
+      {
+        "name": "The One Ink Rule",
+        "body": "Drafting navy is the only non-state hue. A second accent colour does not exist in this system; emphasis comes from ink weight, not from another hue.",
+        "section": "colors"
+      },
+      {
+        "name": "The Icon-and-Word Rule",
+        "body": "Red, amber and green never carry meaning alone. Every state mark pairs the colour with an icon (check, half-disc, cross, dash, alert triangle) and a word (Capaz, Marginal, No capaz, Sin datos); chart limit lines carry text labels and out-of-control points change shape.",
+        "section": "colors"
+      },
+      {
+        "name": "The Notation Rule",
+        "body": "Statistical symbols (σ, x̄, R̄, S̄, μ₀, Cp/Cpk, d₂, c₄, α, β, δ) inside uppercase labels are wrapped as notation: no case transform, no letter-spacing, set in Archivo (which draws the x̄ macron correctly). An uppercase label must never turn σ into Σ or Cpk into CPK.",
+        "section": "typography"
+      },
+      {
+        "name": "The Narrow-for-Drawing Rule",
+        "body": "Archivo Narrow sets what a draughtsman would letter (headings, labels, figures, control frames); Archivo sets what a reader reads. Do not swap them.",
+        "section": "typography"
+      },
+      {
+        "name": "The Ruled-Not-Raised Rule",
+        "body": "If something needs to stand apart, give it a heavier rule or an ink-wash ground, never a drop shadow. The only box-shadow in the system is an inset ink stroke that thickens a focused input's border.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do use drafting navy (#14365c) as the only accent; express emphasis by ink weight and ink-wash grounds.",
+      "Do pair every red, amber or green with an icon and a word.",
+      "Do wrap statistical symbols as notation inside uppercase labels so σ, x̄ and Cpk keep their case.",
+      "Do set headings, labels, column heads, figures and control frames in Archivo Narrow, and running text in Archivo, all with tabular numerals.",
+      "Do separate surfaces with rules: 1px hairline inside, 1px strong hairline outside, 1.5px ink on controls, 2px ink under table heads and around overlays.",
+      "Do reuse the cota and control frame wherever capability is shown, at row, header or report scale, drawn to scale.",
+      "Do honour reduced motion: every animation and transition is removed under prefers-reduced-motion."
+    ],
+    "donts": [
+      "Don't add drop shadows, glows, gradients or glass blur; the sheet is flat.",
+      "Don't round the corners of containers, controls, tags or frames.",
+      "Don't flood a surface with state colour outside the Phase II signal strip; elsewhere state colour lives on text, strokes and tints.",
+      "Don't introduce a second accent hue or decorative colour for charts; chart series use ink, graphite and the state colours."
+    ]
+  }
+}

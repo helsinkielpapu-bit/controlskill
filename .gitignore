@@ -1,0 +1,38 @@
+# Secretos locales
+.env
+.env.*
+!.env.example
+*.secret
+
+# Dependencias y compilados
+node_modules/
+dist/
+coverage/
+*.tsbuildinfo
+
+# Pruebas
+test-results/
+playwright-report/
+
+# Impeccable (carpetas de trabajo; las de configuración sí se versionan)
+.impeccable/questions/
+.impeccable/mocks/
+.impeccable/review/
+.impeccable/critique/snapshots/
+.impeccable/config.local.json
+
+# Sistema y editores
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.log
+
+# Herramientas locales del asistente (no forman parte del producto)
+.claude/
+
+# Material privado: nunca se sube
+_privado/
+
+# Documentos de entrega del curso (no se publican)
+entrega/
