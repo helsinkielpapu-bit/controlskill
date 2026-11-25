@@ -11,7 +11,7 @@ Plataforma de Control Estadístico de Procesos: Fase I, capacidad, monitoreo en 
 - Node.js 22 o superior
 - PostgreSQL 16, con las bases `controlskill` y `controlskill_test`
 
-Todo corre solo en local (`127.0.0.1`). No hay despliegue ni servicios externos.
+Corre en local (`127.0.0.1`) o publicado en línea en Render (ver [Publicación en línea](#publicación-en-línea)). No hay integración de pagos.
 
 ## Puesta en marcha
 
@@ -36,6 +36,18 @@ Paso a paso:
    ```
    npm run dev -w @controlskill/web
    ```
+
+## Publicación en línea
+
+El archivo `render.yaml` describe todo lo necesario para [Render](https://render.com): una base PostgreSQL y un servicio web que sirve la API y la web desde la misma dirección.
+
+1. En Render: **New → Blueprint**, conecta GitHub y elige este repositorio.
+2. Escribe la clave de la cuenta demo cuando pida `DEMO_PASSWORD` (mínimo 8 caracteres). El correo es `demo@controlskill.test`.
+3. Pulsa **Apply**. Al terminar, la app queda en `https://<nombre>.onrender.com`.
+
+Al arrancar se aplican las migraciones y, si no existe, se crea la cuenta demo con sus procesos de ejemplo. Cada `git push` a `main` vuelve a publicar.
+
+En el plan gratuito el servicio se duerme tras 15 minutos sin visitas (la primera visita tarda cerca de un minuto) y la base gratuita caduca a los 30 días.
 
 ## Pruebas
 

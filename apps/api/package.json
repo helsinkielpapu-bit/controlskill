@@ -1,31 +1,32 @@
 {
-    "name":  "@controlskill/api",
-    "private":  true,
-    "version":  "0.1.0",
-    "type":  "module",
-    "scripts":  {
-                    "dev":  "tsx watch src/server.ts",
-                    "start":  "tsx src/server.ts",
-                    "migrate":  "tsx src/migrate.ts",
-                    "seed":  "tsx src/seed.ts"
-                },
-    "devDependencies":  {
-                            "@types/pg":  "^8.23.1",
-                            "tsx":  "^4.23.15"
-                        },
-    "dependencies":  {
-                         "@controlskill/contracts":  "^0.1.0",
-                         "@controlskill/engine":  "^0.1.0",
-                         "@fastify/cookie":  "^11.1.5",
-                         "@fastify/cors":  "^11.4.3",
-                         "@fastify/jwt":  "^10.2.8",
-                         "@fastify/multipart":  "^10.1.9",
-                         "@fastify/rate-limit":  "^11.2.2",
-                         "bcryptjs":  "^3.0.3",
-                         "csv-parse":  "^7.0.3",
-                         "fastify":  "^5.12.8",
-                         "pg":  "^8.23.1",
-                         "xlsx":  "https://cdn.sheetjs.com/xlsx-0.20.3/xlsx-0.20.3.tgz",
-                         "zod":  "^4.6.7"
-                     }
+    "name": "@controlskill/api",
+    "private": true,
+    "version": "0.1.0",
+    "type": "module",
+    "scripts": {
+        "dev": "tsx watch src/server.ts",
+        "start": "tsx src/server.ts",
+        "migrate": "tsx src/migrate.ts",
+        "seed": "tsx src/seed.ts"
+    },
+    "devDependencies": {
+        "@types/pg": "^8.23.1",
+        "tsx": "^4.23.15"
+    },
+    "dependencies": {
+        "@controlskill/contracts": "^0.1.0",
+        "@controlskill/engine": "^0.1.0",
+        "@fastify/cookie": "^11.1.5",
+        "@fastify/cors": "^11.4.3",
+        "@fastify/jwt": "^10.2.8",
+        "@fastify/multipart": "^10.1.9",
+        "@fastify/rate-limit": "^11.2.2",
+        "@fastify/static": "^10.1.12",
+        "bcryptjs": "^3.0.3",
+        "csv-parse": "^7.0.3",
+        "fastify": "^5.12.8",
+        "pg": "^8.23.1",
+        "xlsx": "https://cdn.sheetjs.com/xlsx-0.20.3/xlsx-0.20.3.tgz",
+        "zod": "^4.6.7"
+    }
 }

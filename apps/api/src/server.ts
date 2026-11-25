@@ -4,5 +4,4 @@ import { migrate } from './migrate.js';
 
 await migrate();
 const app = await buildApp({ logger: true });
-// Solo local: escucha únicamente en 127.0.0.1.
-await app.listen({ host: '127.0.0.1', port: env.port });
+await app.listen({ host: env.host, port: env.port });

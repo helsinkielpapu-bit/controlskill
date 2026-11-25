@@ -18,11 +18,22 @@ const DEMO = [499.2,501.3,500.8,499.7,500.1,501.5,499.8,500.3,501.1,499.5,500.7,
   501.3,499.4,500.6,501.1,499.8,500.2,500.7,499.5,501.4,500.0,500.3,499.7,501.0,500.5,499.9,501.2,500.1,499.6,500.8,501.5,
   499.4,500.9,501.3,499.8,500.4,501.1,499.2,500.6,501.0,500.3,499.7,500.8,501.4,499.5,500.2,501.3,499.9,500.7,501.1,499.3];
 
+// --if-missing (usado al arrancar en el servidor): solo crea la demostración si aún no existe,
+// para no borrar lo que se haya hecho con la cuenta demo en cada reinicio.
+const ifMissing = process.argv.includes('--if-missing');
 const email = (process.env.DEMO_EMAIL ?? '').toLowerCase();
 const password = process.env.DEMO_PASSWORD ?? '';
-if (!email || password.length < 8) { console.error('Define DEMO_EMAIL y DEMO_PASSWORD (≥ 8) en .env'); process.exit(1); }
+if (!email || password.length < 8) {
+  if (ifMissing) { console.log('Sin DEMO_EMAIL/DEMO_PASSWORD: no se cargan datos de demostración.'); await pool.end(); process.exit(0); }
+  console.error('Define DEMO_EMAIL y DEMO_PASSWORD (≥ 8) en .env'); process.exit(1);
+}
 
 await migrate(() => {});
+if (ifMissing && (await pool.query('SELECT 1 FROM companies WHERE email = $1', [email])).rowCount) {
+  console.log(`La demostración para ${email} ya existe.`);
+  await pool.end();
+  process.exit(0);
+}
 await transaction(async c => {
   await c.query('DELETE FROM companies WHERE email = $1', [email]);
   const company = (await c.query(`INSERT INTO companies (name, email, subscription_status) VALUES ('Envases del Norte (demo)', $1, 'inactive') RETURNING id`, [email])).rows[0].id;

@@ -1,0 +1,36 @@
+# Publicación en Render (Blueprint): un servicio web que sirve la API y la web, y una base PostgreSQL.
+# En Render: New → Blueprint → elegir este repositorio. Pedirá DEMO_PASSWORD (clave de la cuenta demo).
+databases:
+  - name: controlskill-db
+    plan: free
+    databaseName: controlskill
+    user: controlskill
+    postgresMajorVersion: "16"
+
+services:
+  - type: web
+    name: controlskill
+    runtime: node
+    plan: free
+    buildCommand: npm ci --include=dev && npm run build -w @controlskill/web
+    startCommand: npm run seed -w @controlskill/api -- --if-missing && npm start -w @controlskill/api
+    healthCheckPath: /health
+    envVars:
+      - key: NODE_VERSION
+        value: "22"
+      - key: NODE_ENV
+        value: production
+      - key: HOST
+        value: 0.0.0.0
+      - key: DATABASE_URL
+        fromDatabase:
+          name: controlskill-db
+          property: connectionString
+      - key: JWT_SECRET
+        generateValue: true
+      - key: REQUIRE_SUBSCRIPTION
+        value: "false"
+      - key: DEMO_EMAIL
+        value: demo@controlskill.test
+      - key: DEMO_PASSWORD
+        sync: false

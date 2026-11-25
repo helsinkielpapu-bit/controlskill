@@ -7,7 +7,7 @@ ControlSkill es un monorepo de npm con un motor de cálculo único que comparten
 1. **Un único motor de cálculo.** El servidor y el navegador importan el mismo paquete, puro y sin dependencias. No hay fórmulas repetidas por pantalla.
 2. **Resultados verificables.** Cada fórmula tiene pruebas contra valores de referencia guardados en el repositorio.
 3. **Datos en el servidor.** Mediciones, evaluaciones de desempeño y sesiones de monitoreo viven en PostgreSQL, por empresa y proceso. El navegador solo guarda preferencias.
-4. **Solo local.** La API escucha en `127.0.0.1:4100` y la web en `127.0.0.1:5173`.
+4. **Local o en línea.** En local la API escucha en `127.0.0.1:4100` y la web en `127.0.0.1:5173`. En línea (`NODE_ENV=production`) un único servicio sirve la API bajo `/api` y la web compilada en el mismo origen; ver `render.yaml`.
 
 ## Paquetes
 
